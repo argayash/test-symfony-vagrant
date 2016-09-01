@@ -4,7 +4,7 @@ README
 What is it?
 -----------------
 
-Test project contain Symfony2(2.8). 
+Test project contain PHP Framework Symfony 2 (2.8). [folder: `www/stest`]
 
 Installation
 ------------
