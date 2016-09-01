@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Таблица товаров (с фото){% endblock %}
+{% block h1 %}Таблица товаров (с фото){% endblock %}
+
+{% block body %}
+    <p>Реализовать шаблон, который выводит данные в виде таблиц, при этом количество запросов к БД должно быть
+        минимальным: <br>
+        Название товара | Цена на товар ( тип цены 1) | Список фото</p>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Photos</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for good in goods %}
+            <tr>
+                <td>{{ good.title }}</td>
+                <td>{{ good.price }}</td>
+                <td>{{ good.photos }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

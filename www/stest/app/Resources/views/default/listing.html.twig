@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Список товаров 2, 3, 1{% endblock %}
+{% block h1 %}Список товаров 2, 3, 1{% endblock %}
+
+{% block body %}
+    <p>Реализовать контроллер, который получает список товаров с ценой типа 1, которые отсортированы по полю ID строго в
+        следующем порядке 2, 3, 1, в виде массива моделей Doctrine 2.</p>
+    <dl class="well">
+        {% for good in goods %}
+            <dt>{{ good.id }}. {{ good.title }} </dt>
+            <dd>{{ good.description }}</dd>
+        {% endfor %}
+    </dl>
+{% endblock %}

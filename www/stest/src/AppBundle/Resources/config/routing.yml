@@ -1,0 +1,11 @@
+app_homepage:
+    path:     /
+    defaults: { _controller: AppBundle:Default:index }
+
+app_get231:
+    path:     /listview
+    defaults: { _controller: AppBundle:Default:goods231 }
+
+app_get_table:
+    path:     /tableview
+    defaults: { _controller: AppBundle:Default:table }
